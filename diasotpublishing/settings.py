@@ -31,7 +31,11 @@ SECRET_KEY = "".join(secrets.choice(choices) for n in range(100))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+
+    "http://diasot.pythonanywhere.com/"
+
+]
 
 
 # Application definition
