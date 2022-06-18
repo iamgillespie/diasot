@@ -1,0 +1,140 @@
+body {
+  font-family: 'Livvic', sans-serif;
+  color: #f3f3f3;
+  background-color: #303030;
+  padding: 0;
+  margin: 0;
+}
+
+#diasotBrand {
+  fill: white;
+  -webkit-filter: drop-shadow(0px 0px 8px rgba(97, 97, 97, 0.466));
+          filter: drop-shadow(0px 0px 8px rgba(97, 97, 97, 0.466));
+}
+
+div#diasot {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+svg#diasotWaves {
+  width: 100%;
+}
+
+g#topWaves {
+  stroke: #87b5bd;
+}
+
+g#midWaves {
+  stroke: #5a82b1;
+}
+
+g#lowWaves {
+  stroke: #645f8f;
+}
+
+#ripple:hover {
+  -webkit-transition: -webkit-filter .4s;
+  transition: -webkit-filter .4s;
+  transition: filter .4s;
+  transition: filter .4s, -webkit-filter .4s;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+#diasotBrand:hover {
+  -webkit-transition: -webkit-filter .4s;
+  transition: -webkit-filter .4s;
+  transition: filter .4s;
+  transition: filter .4s, -webkit-filter .4s;
+  -webkit-filter: drop-shadow(3px 3px 10px #1f8eaf);
+          filter: drop-shadow(3px 3px 10px #1f8eaf);
+}
+
+div#signup {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 30px;
+}
+
+form {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+}
+
+input, button {
+  font-size: inherit;
+  text-align: center;
+  padding: 0.3em;
+  margin: 0.1em 0.2em;
+  /* the following ensures they're all using the same box-model for rendering */
+  /* or `border-box` */
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input#email {
+  width: 90%;
+  border-radius: 5px;
+  border: solid 2px #68a3d3;
+  border-right: hidden;
+  height: 100%;
+}
+
+input#name {
+  width: 90%;
+  border-radius: 5px;
+  border: solid 2px #68a3d3;
+  border-right: hidden;
+  height: 100%;
+}
+
+button#submit {
+  position: relative;
+  height: 100%;
+  border-radius: 15px;
+  width: 100px;
+  border: 2px solid #68a3d3;
+  color: white;
+  background-color: #68a3d3;
+  font-size: medium;
+  -ms-flex-item-align: right;
+      -ms-grid-row-align: right;
+      align-self: right;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  font-weight: 600;
+}
+
+button#submit:hover {
+  border-radius: 5px;
+  color: #68a3d3;
+  background-color: rgba(104, 163, 211, 0);
+}
+
+div#signup p {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+  opacity: .8;
+}
+/*# sourceMappingURL=style.css.map */

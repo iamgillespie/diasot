@@ -1,0 +1,119 @@
+body {
+    font-family: 'Livvic', sans-serif;
+    color: rgb(243, 243, 243);
+    background-color: rgb(48, 48, 48);
+    padding: 0;
+    margin: 0;
+}
+//text in the svg
+#diasotBrand {
+fill: rgb(255, 255, 255);
+filter: drop-shadow(0px 0px 8px rgba(97, 97, 97, 0.466));
+}
+
+div#diasot {
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+svg#diasotWaves {
+    width: 100%;
+}
+
+g#topWaves {
+    stroke: rgb(135, 181, 189);
+}
+
+g#midWaves {
+    stroke: rgb(90, 130, 177);
+}
+
+g#lowWaves {
+    stroke: rgb(100, 95, 143);
+}
+
+#ripple:hover{
+    transition: filter .4s;
+    filter: blur(2px);
+}
+
+#diasotBrand:hover {
+    transition: filter .4s;
+    filter: drop-shadow(3px 3px 10px rgb(31, 142, 175));
+}
+
+div#signup {
+    position: absolute;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 30px;
+}
+
+form {
+    width: max-content;
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+}
+
+input, button {
+    font-size: inherit;
+    text-align: center;
+    padding: 0.3em;
+    margin: 0.1em 0.2em;
+    /* the following ensures they're all using the same box-model for rendering */
+    -moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+
+input#email {
+    width: 90%;
+    border-radius: 5px;
+    border: solid 2px rgb(104, 163, 211);
+    border-right: hidden;
+    height: 100%;
+}
+
+input#name {
+    width: 90%;
+    border-radius: 5px;
+    border: solid 2px rgb(104, 163, 211);
+    border-right: hidden;
+    height: 100%;
+}
+
+button#submit {
+    position: relative; 
+    height: 100%;
+    border-radius: 15px;
+    width: 100px;
+    border: 2px solid rgb(104, 163, 211);
+    color: rgb(255, 255, 255);
+    background-color: rgb(104, 163, 211);
+    font-size: medium;
+    align-self: right;
+    transition: all .5s;
+    font-weight: 600;
+}
+
+button#submit:hover {
+    border-radius: 5px;
+    color: rgb(104, 163, 211);
+    background-color: rgba(104, 163, 211, 0);
+}
+
+div#signup p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    opacity: .8;
+}
