@@ -32,7 +32,7 @@ SECRET_KEY = "".join(secrets.choice(choices) for n in range(100))
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    #'*',
+    '*',
     "diasot.pythonanywhere.com"
 
 ]
