@@ -14,7 +14,7 @@ class Publication(models.Model):
     ISBN_10 = models.CharField(max_length=30, blank=True)
     ISBN_registered = models.BooleanField()
     ISBN_url = models.URLField(blank=True)
-    #notes = RichTextField(blank=True, null=True)
+    #note = RichTextField(blank=True, null=True)
     note = models.TextField()
 
 #    class Meta:

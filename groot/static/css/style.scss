@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0;
 }
+
 //text in the svg
 #diasotBrand {
 fill: rgb(255, 255, 255);
@@ -17,7 +18,7 @@ div#diasot {
     align-items: center;
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 25vh;
     transform: translate(-50%, -50%);
 }
 
@@ -49,11 +50,12 @@ g#lowWaves {
 
 div#signup {
     position: absolute;
-    width: fit-content;
+    width: 100%;
     left: 0;
     right: 0;
+    align-content: center;
     text-align: center;
-    padding: 30px;
+
 }
 
 form {
